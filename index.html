@@ -111,13 +111,13 @@
       margin: 10px 0;
       font-size: 1.1rem;
     }
-    .contact {
+    .contact, .payment-methods {
       text-align: center;
     }
-    .contact .buttons {
+    .contact .buttons, .payment-methods .methods {
       margin-top: 20px;
     }
-    .contact .btn {
+    .contact .btn, .payment-methods .btn {
       margin: 10px;
       padding: 12px 20px;
       font-size: 1rem;
@@ -128,11 +128,8 @@
       cursor: pointer;
       transition: 0.3s;
     }
-    .contact .btn:hover {
+    .contact .btn:hover, .payment-methods .btn:hover {
       background: #00b38f;
-    }
-    .hidden-link {
-      display: none;
     }
     footer {
       text-align: center;
@@ -168,6 +165,7 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#payment-methods">Payment Methods</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -195,6 +193,15 @@
     </ul>
   </section>
 
+  <section class="payment-methods" id="payment-methods" data-aos="fade-up">
+    <h3 class="section-title">Payment Methods</h3>
+    <p>I accept the following payment methods:</p>
+    <div class="methods">
+      <button class="btn">UPI</button>
+      <button class="btn">Crypto Payments</button>
+    </div>
+  </section>
+
   <section class="contact" id="contact" data-aos="fade-up">
     <h3 class="section-title">Contact</h3>
     <p>Let’s get in touch via your preferred method:</p>
@@ -206,11 +213,10 @@
         <i class="fas fa-envelope"></i> Email
       </button>
     </div>
-    <p>Payment Methods: UPI and crypto payments are accepted. Please contact me on Telegram for details.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Carnage | Designed by Vinit</p>
+    <p>&copy; 2025 Carnage | All rights reserved. Made by or with ❤️</p>
   </footer>
 
   <script>
